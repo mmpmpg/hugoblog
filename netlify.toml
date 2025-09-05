@@ -1,0 +1,5 @@
+[build]
+  publish = "public"
+  command = "hugo --minify"
+[build.environment]
+  HUGO_VERSION = "0.149.1" # 在这里指定你使用的Hugo版本

@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway
+  branch: main  # 确保与你的 Git 分支名一致
+
+publish_mode: editorial_workflow
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "posts"  # 这是一个内部名称，可以自定义
+    label: "文章"  # 显示在 CMS 面板上的名称
+    folder: "content/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "标题", name: "title", widget: "string"}
+      - {label: "发布日期", name: "date", widget: "datetime"}
+      - {label: "草稿", name: "draft", widget: "boolean", default: true}
+      - {label: "正文", name: "body", widget: "markdown"}
