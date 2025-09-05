@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main
+      
+permissions:
+  contents: write # 授予工作流写入仓库的权限
+  pages: write    # 授予工作流管理 Pages 的权限
 
 jobs:
   build-and-deploy:
