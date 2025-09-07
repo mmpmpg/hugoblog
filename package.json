@@ -1,0 +1,23 @@
+{
+  "name": "my-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmpmpg/hugoblog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmpmpg/hugoblog/issues"
+  },
+  "homepage": "https://github.com/mmpmpg/hugoblog#readme",
+  "dependencies": {
+    "netlify-cms-app": "^2.15.72"
+  }
+}
