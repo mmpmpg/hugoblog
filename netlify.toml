@@ -1,7 +1,10 @@
 [build]
   publish = "public"
   command = "hugo --gc --minify"
+
 [build.environment]
-  HUGO_VERSION = "0.149.1" # 在这里指定你使用的Hugo版本
+  HUGO_VERSION = "0.149.1"  # 请根据你的实际版本修改
+
+# 构建前先安装npm依赖
 [[build.preprocessing]]
   command = "npm install"
